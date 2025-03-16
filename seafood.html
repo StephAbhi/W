@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seafood Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" id="navbar__logo">Yadah</a>
+            <ul class="navbar__menu">
+                <li class="navbar__item"><a href="index.html" class="navbar__links">Home</a></li>
+                <li class="navbar__item"><a href="poultry.html" class="navbar__links">Poultry</a></li>
+                <li class="navbar__item"><a href="dairy.html" class="navbar__links">Dairy</a></li>
+            </ul>
+        </div>  
+    </nav>
+
+    <h1>Freshly Sourced Seafood</h1>
+
+    <div class="product-container" id="product-list">
+        <!-- Products will be loaded here -->
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        loadProducts("seafood"); // Load only seafood products
+    </script>
+</body>
+</html>

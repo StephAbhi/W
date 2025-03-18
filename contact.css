@@ -1,0 +1,109 @@
+/* Contact Page CSS */
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: #272626;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff8177;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 2.5rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.contact-card {
+    background: #f9f9f9;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2 {
+    color: #ff8177;
+    text-align: center;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.qr-code {
+    display: flex;
+    width: 200px; /* Desired width */
+    height: 200px; /* Desired height */
+    object-fit: cover; /* Crops the image to fill the container */
+    object-position: center; /* Centers the image within the container */
+    border-radius: 8px; /* Optional for rounded corners */
+    margin: auto;
+}
+
+button {
+    display: flex;
+    background-color: #ff8177;
+    color: white;
+    border: none;
+    margin: auto;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #f77062;
+}
+
+a {
+    color: #ff8177;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Show on Maps Link */
+.map-link {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    color: #ff8177;
+    font-size: 1.1rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.map-link:hover {
+    text-decoration: underline;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .contact-card {
+        width: 90%;
+        padding: 20px;
+    }
+}

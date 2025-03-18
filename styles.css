@@ -293,12 +293,12 @@
     width: 100%;
 }
 
-.main__img--container {
+/* .main__img--container {
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 #main__img {
     width: 520px; /* Adjust size as needed */
@@ -308,6 +308,33 @@
     border: none; /* Optional: Adds a border around the image */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a slight shadow */   
 }
+
+.main__img--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  #main__img {
+    max-width: 100%; /* Ensures it doesn't overflow its container */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: contain; /* Ensures no distortion */
+  }
+  
+  /* Optional: Add more responsiveness */
+  @media (max-width: 768px) {
+    #main__img {
+      max-width: 80%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #main__img {
+      max-width: 90%;
+    }
+  }
+  
 
 /* Mobile Responsive */
 

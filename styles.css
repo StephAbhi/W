@@ -669,6 +669,7 @@
     .footer__link--items {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         margin: 10px;
         padding-top: 20px; /* Adjust as needed */
         padding-bottom: 20px;

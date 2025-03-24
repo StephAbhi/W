@@ -668,6 +668,7 @@
 @media screen and (max-width: 480px) {
     .footer__link--items {
         display: flex;
+        justify-content: space-between;
         margin: 10px;
         padding-top: 20px; /* Adjust as needed */
         padding-bottom: 20px;

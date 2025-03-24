@@ -666,13 +666,17 @@
 }
 
 @media screen and (max-width: 480px) {
+    .footer__container {
+        padding-top: 40px;
+    }
+
     .footer__link--items {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin: 0px;
         padding-left: 20px;
-        padding-top: 150px; /* Adjust as needed */
+        padding-top: 50px; /* Adjust as needed */
         padding-bottom: 20px;
         width: 100%;
         text-align: center; /* Ensures text is centered */

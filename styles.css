@@ -668,8 +668,21 @@
 @media screen and (max-width: 480px) {
     .footer__link--items {
         margin: 0;
-        padding-top: 50px;
+        padding-top: 20px; /* Adjust as needed */
+        padding-bottom: 20px;
         width: 100%;
+        text-align: center; /* Ensures text is centered */
+    }
+  
+    .footer__link--wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centers the links */
+    }
+
+    .footer__link--items a {
+        display: block;
+        margin: 10px 0; /* Space between links */
     }
 }
 

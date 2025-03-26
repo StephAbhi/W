@@ -537,12 +537,12 @@
 
     .services h2 {
         position: absolute;
-        top: 300px;
+        top: 320px;
         left: 30px;
     }
 
     .services__card {
-        width: 320px;
+        width: 300px;
     }
 
 }

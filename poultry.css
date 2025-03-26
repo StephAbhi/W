@@ -37,7 +37,68 @@ h1 {
     color: #f1eeee; /* Adjust color if needed */
 }
 
-
+/* Mobile Menu Styling */
+.navbar__toggle {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Mobile Menu Active State */
+  @media screen and (max-width: 768px) {
+    .navbar__menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #131313;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      text-align: center;
+      z-index: 999;
+    }
+  
+    .navbar__menu.active {
+      display: flex;
+      height: 30vh; /* Reduced Height */
+      overflow-y: auto; /* Adds scroll if content exceeds height */
+    }
+  
+    .navbar__toggle {
+      display: block;
+    }
+  
+    .navbar__links {
+      font-size: 2rem; /* Adjust the size as needed */  
+      padding: 1rem;
+      width: 100%;
+      display: block;
+    }
+  
+    .navbar__item {
+      margin: 0;
+    }
+  
+    #mobile-menu.is-active .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    #mobile-menu.is-active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+  
+    #mobile-menu.is-active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
 
 .product-container {
     display: flex;

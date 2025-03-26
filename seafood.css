@@ -68,6 +68,8 @@ h1 {
   
     .navbar__menu.active {
       display: flex;
+      height: 30vh; /* Reduced Height */
+      overflow-y: auto; /* Adds scroll if content exceeds height */
     }
   
     .navbar__toggle {
@@ -75,6 +77,7 @@ h1 {
     }
   
     .navbar__links {
+      font-size: 2rem; /* Adjust the size as needed */  
       padding: 1rem;
       width: 100%;
       display: block;

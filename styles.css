@@ -537,6 +537,14 @@
     .services__card {
         width: 300px;
     }
+
+    .services__card h2 {
+        font-size: 1rem;
+    }
+
+    .services__card p {
+        font-size: 0.5rem;
+    }
 }
 
 /* Footer CSS */
@@ -667,7 +675,7 @@
 
 @media screen and (max-width: 480px) {
     .footer__links{
-        padding-top: 45rem;
+        padding-top: 55rem;
     }
 
     .footer__link--items {

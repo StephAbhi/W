@@ -537,6 +537,10 @@
     .services__card {
         width: 300px;
     }
+
+    .services__card h2 {
+        margin-bottom: 20px;
+    }
 }
 
 /* Footer CSS */

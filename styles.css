@@ -523,6 +523,7 @@
         font-size: 2rem;
         margin-top: 10rem;
     }
+    
 }
 
 @media screen and (max-width:480px) {
@@ -534,13 +535,16 @@
         font-size: 1.2rem;
     }
 
+    .services h2 {
+        position: absolute;
+        top: 330px;
+        left: 30px;
+    }
+
     .services__card {
         width: 300px;
     }
 
-    .services__card h2 {
-        margin-bottom: 200px;
-    }
 }
 
 /* Footer CSS */

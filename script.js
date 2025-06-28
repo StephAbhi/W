@@ -9,14 +9,14 @@ mobileMenu.addEventListener('click', () => {
 
 const products = {
     seafood: [
-        { name: "Mackerel", price: "₹600/kg", image: "images/mackerel.jpg" },
+        { name: "Mackerel", price: "₹700/kg", image: "images/mackerel.jpg" },
         { name: "Salmon Fillet", price: "₹650/kg", image: "images/salmon.jpg" },
-        { name: "Tiger Prawns", price: "₹850/kg", image: "images/prawns.jpg" },
+        { name: "Tiger Prawns", price: "₹850/kg", image: "images/tigerprawns.avif" },
         { name: "Crab Meat", price: "₹500/kg", image: "images/crab.jpg" },
-        { name: "Pomfret Fish", price: "₹700/kg", image: "images/pomfret.jpg" },
-        { name: "King Fish", price: "₹1350/kg", image: "images/pomfret.jpg" },
-        { name: "Salmon Fish", price: "₹1000/kg", image: "images/pomfret.jpg" },
-        { name: "Sea Bass", price: "₹300/kg", image: "images/pomfret.jpg" },
+        { name: "Pomfret Fish", price: "₹700/kg", image: "images/pomfret.avif" },
+        { name: "King Fish", price: "₹1350/kg", image: "images/kingfish.jpg" },
+        { name: "Salmon Fish", price: "₹1000/kg", image: "images/salmonfish.jpg" },
+        { name: "Sea Bass", price: "₹300/kg", image: "images/seabass.jpg" },
         { name: "Mackerel", price: "₹600/kg", image: "images/pomfret.jpg" },
         { name: "Mackerel", price: "₹600/kg", image: "images/pomfret.jpg" },
         { name: "Mackerel", price: "₹600/kg", image: "images/pomfret.jpg" },
@@ -92,7 +92,7 @@ function loadProducts(category) {
         productCard.innerHTML = `
             <img src="${product.image}" alt="${product.name}">
             <h3>${product.name}</h3>
-            <p>Price: ${product.price}</p>
+            <p>Approx Price: ${product.price}</p>
         `;
         productList.appendChild(productCard);
     });
